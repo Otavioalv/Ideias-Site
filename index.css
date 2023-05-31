@@ -34,6 +34,24 @@
     color: #0b5ed7;
 }
 
+.coment{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.coment img{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.coment-respost{
+    margin-left: 15%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgb(221, 221, 221);
+}
+
 
 
 @media screen and (min-width: 900px){
