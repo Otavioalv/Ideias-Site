@@ -1,12 +1,19 @@
 .post-drop:target{
    position: fixed;
-   top: 2px;
+   top: 20px;
    width: 90%;
    left: 5%;
+   z-index: 1000;
 }
 .post-drop:target .infoPost{
     display: block;
     width: 100%;
+}
+
+.closeButtom{
+    position: absolute; 
+    font-size: 30px;
+    padding-left: 8px;
 }
 
 .infoPost{
@@ -65,7 +72,7 @@
 
     .post-drop:target{
         position: fixed;
-        top: 2px;
+        top: 20px;
         width: 40%;
         left: 30%;
      }

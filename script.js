@@ -3,27 +3,18 @@ function show(id) {
     divImagens.classList.toggle('d-none');
 }
 
-
-var checkLike = true
-function like() {
-    var heartLike = document.querySelectorAll('.heartLike-1');
-
-    if(checkLike){
-        checkLike = false
-
-        heartLike.forEach((icon) =>  {
-            icon.classList.remove('bi-heart');
-            icon.classList.add('bi-heart-fill');
-        });
+function like(className) {
+    var heartIcons = document.querySelectorAll(className);
+  
+    if (heartIcons[0].classList.contains('bi-heart')) {
+      heartIcons.forEach(function (icon) {
+        icon.classList.remove('bi-heart');
+        icon.classList.add('bi-heart-fill');
+      });
+    } else {
+      heartIcons.forEach(function (icon) {
+        icon.classList.remove('bi-heart-fill');
+        icon.classList.add('bi-heart');
+      });
     }
-    else{
-        checkLike = true
-
-        heartLike.forEach((icon) => {
-            icon.classList.remove('bi-heart-fill');
-            icon.classList.add('bi-heart');
-        });
-    }
-
-    console.log(checkLike)
-}
+  }
