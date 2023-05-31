@@ -7,8 +7,9 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Site Ideias</title>
 </head>
 <body>
@@ -53,7 +54,7 @@
 
             </div>
 
-            <button id="mostrarDivBtn" class="btn btn-primary " onclick="Curriculo()">
+            <button id="mostrarDivBtn" class="btn btn-primary " onclick="show('CurriculContainer')">
                 Mostrar Curriculo
             </button>
 
@@ -110,7 +111,83 @@
     </section>
 
     <section>
-        <h1>Postagens</h1>
+        <div class="p-5">
+            <div class="d-flex align-items-center flex-column">
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum quis </h6>
+                    
+                <div id="post1" class="post-drop">
+                        
+                        <div class="infoPost">
+                            <a href="#">Fechar</a>
+                        </div>
+
+                        <a href="#post1">
+                            <img src="https://via.placeholder.com/1000/" alt="Post" class="w-100"/>
+                        </a>
+
+                        <div class="infoPost">
+                            <div class="interation">
+                                <ul class="list-unstyled d-flex">
+                                    <li>
+                                        <button onclick="like()"><i class="bi bi-heart heartLike-1"></i></button>
+                                    </li>
+            
+                                    <li>
+                                        <button><i class="bi bi-chat-fill"></i></button>
+                                    </li>
+            
+                                    <li>
+                                        <button><i class="bi bi-send-fill"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                
+
+                <div class="interation">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <button onclick="like()"><i class="bi bi-heart heartLike-1"></i></button>
+                        </li>
+
+                        <li class="dropdown">
+                            <button class="dropdown-item" onclick="show()"><i class="bi bi-chat-fill"></i></button>
+                        </li>
+
+                        <li>
+                            <button><i class="bi bi-send-fill"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="d-flex">
+                        <img src="https://via.placeholder.com/100/" alt="">
+                        
+                        <div class="m-3">
+                            <h6>Name Usser</h6>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci id rerum velit sapiente at, cum minus unde autem ea. Alias minus quaerat esse dolorum sapiente ad necessitatibus perspiciatis voluptatum. Incidunt!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="interation interation-p">
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <button onclick="like()"><i class="bi bi-heart heartLike-1"></i></button>
+                            </li>
+    
+                            <li class="dropdown">
+                                <button class="dropdown-item" onclick="show()"><i class="bi bi-chat-fill"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <!-- ------ -->
 
@@ -119,5 +196,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

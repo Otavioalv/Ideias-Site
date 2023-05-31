@@ -1,0 +1,63 @@
+.post-drop:target{
+   position: fixed;
+   top: 2px;
+   width: 90%;
+   left: 5%;
+}
+.post-drop:target .infoPost{
+    display: block;
+    width: 100%;
+}
+
+.infoPost{
+    display: none;
+}
+
+.interation{
+    width: 100%;
+}
+
+.interation button{
+    border: none;
+    background-color: transparent;
+}
+
+.interation li {
+    margin: 0 1em;
+}
+
+.interation i {
+    color: #0d6efd;
+}
+
+.interation i:hover {
+    color: #0b5ed7;
+}
+
+
+
+@media screen and (min-width: 900px){
+    .post-drop{
+        width: 50%;
+    }   
+
+    .post-drop:target{
+        position: fixed;
+        top: 2px;
+        width: 40%;
+        left: 30%;
+     }
+
+     .interation{
+        width: 50%;
+    }
+
+    .interation i{
+        font-size: 30px;
+    }
+
+    .interation-p i{
+        font-size: 20px;
+    }
+
+}
