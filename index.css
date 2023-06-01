@@ -10,6 +10,15 @@
     width: 100%;
 }
 
+.postVideo{
+
+}
+
+.postVideo video {
+    width: 100%;
+    height: 56.25%;
+}
+
 .closeButtom{
     position: absolute; 
     font-size: 30px;
@@ -87,6 +96,19 @@
 
     .interation-p i{
         font-size: 20px;
+    }
+
+    .postVideo video {
+        width: 640px;
+        height: 360px;
+    }
+
+    .postText{
+        width: 50%;
+    }
+
+    .bio{
+        width: 55%;
     }
 
 }
