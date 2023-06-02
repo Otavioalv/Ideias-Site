@@ -4,7 +4,7 @@ Ideias site
 https://otavioalv.github.io/Ideias-Site/
 
 <br>
-Esse site faz parte de um trabalho que tive que terminar em 4 dias 
+Esse site faz parte de um trabalho academico que tive que terminar em 4 dias 
 
 <h2>Tecnologias usadas</h2>
 <div>
