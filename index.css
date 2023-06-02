@@ -119,9 +119,11 @@
         font-size: 20px;
     }
 
+
     .postVideo video {
-        width: 640px;
-        height: 360px;
+        /* width: 854px;
+        height: 480px; */
+        width: 60vw;
     }
 
     .postText{
@@ -136,5 +138,4 @@
         width: 80px;
         border-radius: 50%;
     }
-
 }
